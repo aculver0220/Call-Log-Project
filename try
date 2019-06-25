@@ -75,8 +75,8 @@ __DATA__
 % title 'Welcome';
     %= form_for upload => (enctype => 'multipart/form-data') => begin
       %= file_field 'fileupload'
-      <!-- %= date_field 'date' -->
-      %= date_field 'end'
+      %= date_field 'date'
+      <!-- %= date_field 'end' -->
       %= date_field end => '2012-12-21'
       %= date_field end => '2012-12-21', id => 'foo'
       %= submit_button 'Upload'
